@@ -1,11 +1,7 @@
 /**
  * Exercise (Chapter 1: Introduction to Java) — arrays and for-loops.
- *
  * Your task is to complete the oddSum method below.
- *
- *
  * You only need to edit the body of oddSum — do not change OddSumTest.
- *
  * Relevant readings: 1.6. Arrays and 1.8.2. for Loops.
  */
 public class OddSum {
@@ -31,6 +27,10 @@ public class OddSum {
         //       Recall arr.length gives the number of elements.
         //       You can index into arrays as we do in Python
         //       (e.g. arr[i] gives you the item at index i).
-        return 0;
+        int sum = 0;
+        for (int i = 1; i < arr.length; i+=2) {
+            sum += arr[i];
+        }
+        return sum;
     }
 }
