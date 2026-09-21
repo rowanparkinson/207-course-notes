@@ -32,12 +32,12 @@ public class Word implements Comparable<Word> {
    *
    * @param other the word to compare with
    * @return negative, zero, or positive as this word is shorter, the same
-   *     length, or longer than other
+   * length, or longer than other
    */
   @Override
   public int compareTo(Word other) {
     // TODO: String has a .length() method. The difference of the two lengths is
     //       already negative / zero / positive in the right cases.
-    return 0;
+    return this.text.length() - other.text.length();
   }
 }
